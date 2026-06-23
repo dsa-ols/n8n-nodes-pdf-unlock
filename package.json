@@ -1,0 +1,55 @@
+{
+  "name": "n8n-nodes-pdf-unlock",
+  "version": "0.1.0",
+  "description": "n8n community node to remove password protection from PDF files (pure JS, no external API)",
+  "keywords": [
+    "n8n-community-node-package",
+    "pdf",
+    "unlock",
+    "decrypt",
+    "password"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "author": {
+    "name": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && npm run copy-icons",
+    "copy-icons": "copyfiles -u 2 nodes/**/*.svg dist/nodes",
+    "dev": "tsc --watch",
+    "lint": "eslint nodes --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/PdfUnlockPassword.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/PdfUnlock/PdfUnlock.node.js"
+    ]
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.0.0",
+    "n8n-workflow": "*",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}

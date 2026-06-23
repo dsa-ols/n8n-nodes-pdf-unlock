@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+  <!-- PDF document body -->
+  <rect x="8" y="4" width="36" height="46" rx="3" ry="3" fill="#E8392A"/>
+  <!-- Folded corner -->
+  <path d="M35 4 L44 13 L35 13 Z" fill="#C0281C"/>
+  <!-- PDF text label -->
+  <text x="16" y="32" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">PDF</text>
+  <!-- Open padlock body -->
+  <rect x="30" y="38" width="22" height="16" rx="3" ry="3" fill="#2ECC71"/>
+  <!-- Open padlock shackle (open = right side lifted) -->
+  <path d="M35 38 L35 30 Q35 24 41 24 Q47 24 47 30" stroke="#27AE60" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Keyhole -->
+  <circle cx="41" cy="46" r="2.5" fill="white"/>
+  <rect x="39.5" y="46" width="3" height="4" rx="1" fill="white"/>
+</svg>
